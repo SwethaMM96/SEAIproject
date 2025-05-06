@@ -19,4 +19,5 @@ RUN pip install -r requirements.txt
 EXPOSE 8501
 
 # Run the Streamlit app
-CMD ["streamlit", "run", "app/main.py"]
+CMD ["streamlit", "run", "app/main.py", "--server.address=0.0.0.0"]
+
